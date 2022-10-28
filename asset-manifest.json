@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PortifolioAndre/static/css/main.d3ece9b8.css",
-    "main.js": "/PortifolioAndre/static/js/main.13fdd5ce.js",
+    "main.css": "/PortifolioAndre/static/css/main.c3636b86.css",
+    "main.js": "/PortifolioAndre/static/js/main.c43abffc.js",
     "static/js/787.ba53a436.chunk.js": "/PortifolioAndre/static/js/787.ba53a436.chunk.js",
     "static/media/trynfu.jpg": "/PortifolioAndre/static/media/trynfu.bfa6e7b6154021244bd9.jpg",
     "static/media/Starwars.jpg": "/PortifolioAndre/static/media/Starwars.171c6b116f415a887122.jpg",
@@ -14,12 +14,12 @@
     "static/media/tune.jpg": "/PortifolioAndre/static/media/tune.8cd5b9ec38a002c72eeb.jpg",
     "static/media/wallet.jpg": "/PortifolioAndre/static/media/wallet.28e2fc7b8f5b3124dd64.jpg",
     "index.html": "/PortifolioAndre/index.html",
-    "main.d3ece9b8.css.map": "/PortifolioAndre/static/css/main.d3ece9b8.css.map",
-    "main.13fdd5ce.js.map": "/PortifolioAndre/static/js/main.13fdd5ce.js.map",
+    "main.c3636b86.css.map": "/PortifolioAndre/static/css/main.c3636b86.css.map",
+    "main.c43abffc.js.map": "/PortifolioAndre/static/js/main.c43abffc.js.map",
     "787.ba53a436.chunk.js.map": "/PortifolioAndre/static/js/787.ba53a436.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3ece9b8.css",
-    "static/js/main.13fdd5ce.js"
+    "static/css/main.c3636b86.css",
+    "static/js/main.c43abffc.js"
   ]
 }
