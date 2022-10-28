@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Store/static/css/main.d3ece9b8.css",
-    "main.js": "/Store/static/js/main.3158cbe0.js",
-    "static/js/787.ba53a436.chunk.js": "/Store/static/js/787.ba53a436.chunk.js",
-    "static/media/trynfu.jpg": "/Store/static/media/trynfu.bfa6e7b6154021244bd9.jpg",
-    "static/media/Starwars.jpg": "/Store/static/media/Starwars.171c6b116f415a887122.jpg",
-    "static/media/Online Store.jpg": "/Store/static/media/Online Store.dc412f21cb6f065b1178.jpg",
-    "static/media/Historia Do Android.jpg": "/Store/static/media/Historia Do Android.c4b1981eac9c1279b385.jpg",
-    "static/media/IMG_20210611_134037_195.jpg": "/Store/static/media/IMG_20210611_134037_195.b5c65c22c59f48d48cb9.jpg",
-    "static/media/Trivia.jpg": "/Store/static/media/Trivia.c3e301d52d779d6887ba.jpg",
-    "static/media/App de receita.jpg": "/Store/static/media/App de receita.57548e251f6c96dea5dd.jpg",
-    "static/media/myAvatar.svg": "/Store/static/media/myAvatar.cdadc4799dba208fc396cada72bde1d0.svg",
-    "static/media/tune.jpg": "/Store/static/media/tune.8cd5b9ec38a002c72eeb.jpg",
-    "static/media/wallet.jpg": "/Store/static/media/wallet.28e2fc7b8f5b3124dd64.jpg",
-    "index.html": "/Store/index.html",
-    "main.d3ece9b8.css.map": "/Store/static/css/main.d3ece9b8.css.map",
-    "main.3158cbe0.js.map": "/Store/static/js/main.3158cbe0.js.map",
-    "787.ba53a436.chunk.js.map": "/Store/static/js/787.ba53a436.chunk.js.map"
+    "main.css": "/PortifolioAndre/static/css/main.d3ece9b8.css",
+    "main.js": "/PortifolioAndre/static/js/main.13fdd5ce.js",
+    "static/js/787.ba53a436.chunk.js": "/PortifolioAndre/static/js/787.ba53a436.chunk.js",
+    "static/media/trynfu.jpg": "/PortifolioAndre/static/media/trynfu.bfa6e7b6154021244bd9.jpg",
+    "static/media/Starwars.jpg": "/PortifolioAndre/static/media/Starwars.171c6b116f415a887122.jpg",
+    "static/media/Online Store.jpg": "/PortifolioAndre/static/media/Online Store.dc412f21cb6f065b1178.jpg",
+    "static/media/Historia Do Android.jpg": "/PortifolioAndre/static/media/Historia Do Android.c4b1981eac9c1279b385.jpg",
+    "static/media/IMG_20210611_134037_195.jpg": "/PortifolioAndre/static/media/IMG_20210611_134037_195.b5c65c22c59f48d48cb9.jpg",
+    "static/media/Trivia.jpg": "/PortifolioAndre/static/media/Trivia.c3e301d52d779d6887ba.jpg",
+    "static/media/App de receita.jpg": "/PortifolioAndre/static/media/App de receita.57548e251f6c96dea5dd.jpg",
+    "static/media/myAvatar.svg": "/PortifolioAndre/static/media/myAvatar.cdadc4799dba208fc396cada72bde1d0.svg",
+    "static/media/tune.jpg": "/PortifolioAndre/static/media/tune.8cd5b9ec38a002c72eeb.jpg",
+    "static/media/wallet.jpg": "/PortifolioAndre/static/media/wallet.28e2fc7b8f5b3124dd64.jpg",
+    "index.html": "/PortifolioAndre/index.html",
+    "main.d3ece9b8.css.map": "/PortifolioAndre/static/css/main.d3ece9b8.css.map",
+    "main.13fdd5ce.js.map": "/PortifolioAndre/static/js/main.13fdd5ce.js.map",
+    "787.ba53a436.chunk.js.map": "/PortifolioAndre/static/js/787.ba53a436.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d3ece9b8.css",
-    "static/js/main.3158cbe0.js"
+    "static/js/main.13fdd5ce.js"
   ]
 }
