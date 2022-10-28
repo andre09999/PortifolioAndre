@@ -1,0 +1,187 @@
+*{
+  color: white;
+}
+header {
+  background-color: rgb(48, 47, 47);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 999px;
+}
+
+.titulo-header {
+color: rgb(54, 206, 206);
+animation-duration: 2s;
+animation-name: titulo-header;
+animation-iteration-count: infinite;
+}
+
+.nav-header{
+  display: flex;
+  gap: 15px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+footer {
+  background-color: rgb(48, 47, 47);
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.but:hover{
+  background-color: rgba(240, 248, 255, 0.349);
+
+}
+.historia{
+  width: 45%;
+}
+
+.texto-sec{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.linkedin{
+  display: flex;
+  border: 1px blue solid;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.github{
+  display: flex;
+  border: 1px rgb(109, 11, 109) solid;
+  border-radius: 5px;
+  padding: 10px;
+}
+.containerbut{
+  display: flex;
+  gap: 15px;
+}
+.img-but{
+  width: 30px;
+}
+.container-gerall{
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+.container-geral{
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+.but{
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  width: 150px;
+  background-color: rgba(240, 248, 255, 0);
+}
+.img-Avatar{
+  width: 350px;
+}
+.nome {
+  color:rgb(54, 206, 206); ;
+}
+
+.App{
+  background-color: black;
+}
+
+.foto_portifolio {
+  width: 300px;
+}
+
+.paragrafo{
+  text-align: justify;
+width: 250px;
+}
+
+.projetos{
+  text-align: justify;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.projetos-cont{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.tecnologia{
+  animation-duration: 3s;
+  animation-name: titulo-header;
+  animation-iteration-count: infinite;
+}
+
+#home:target{
+  -webkit-animation: fadeIn 3s ease-in-out;
+-moz-animation: fadeIn 3s ease-in-out;
+-o-animation: fadeIn 3s ease-in-out;
+scroll-behavior: smooth;
+animation: fadeIn 3s ease-in-out;
+}
+
+#sobre:target{
+  -webkit-animation: fadeIn 3s ease-in-out;
+-moz-animation: fadeIn 3s ease-in-out;
+-o-animation: fadeIn 3s ease-in-out;
+animation: fadeIn 3s ease-in-out;
+scroll-behavior: smooth;
+}
+#portifolio:target{
+  -webkit-animation: fadeIn 3s ease-in-out;
+-moz-animation: fadeIn 3s ease-in-out;
+-o-animation: fadeIn 3s ease-in-out;
+animation: fadeIn 3s ease-in-out;
+scroll-behavior: smooth;
+}
+
+@keyframes titulo-header {
+  100%{
+    color:rgb(54, 206, 206);
+  }
+  50%{
+    color: white;
+  }
+  0%{
+    color: rgb(54, 206, 206);;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; } 
+  }
+  @-moz-keyframes fadeIn {
+  0% { opacity: 0;}
+  100% { opacity: 1; }
+  }
+  @-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
+  @keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
