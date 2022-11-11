@@ -129,10 +129,11 @@ footer {
   height: 90px;
   background-color: #252525;
   border-radius: 50px;
-  background-image: url('imgs/logo/darck.svg');
   transition: 4s;
+  background-image: url('imgs/logo/darck.jpg');
   background-position: center;
-  background-size: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .inputs{
   display: none;
@@ -146,10 +147,11 @@ footer {
   width: 300px;
   border-radius: 50px;
   height: 90px;
-  transition: 4s;
   background-image: url('imgs/logo/ligth.jpg');
+  transition: 4s;
   background-position: center;
-  background-size: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #input{
@@ -189,6 +191,10 @@ width: 250px;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.modo{
+  transition: 4s;
 }
 
 .tecnologia{
