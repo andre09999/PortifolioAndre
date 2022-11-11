@@ -245,9 +245,7 @@ scroll-behavior: smooth;
 @media screen and (max-width: 1400px) {
   #input{
     font-size: 28px;
-    left: 3vw;
-    top: 3vh;
-    height: 6vh;
+    left: 83vw;
     width: 100%;
   }
   .check{
