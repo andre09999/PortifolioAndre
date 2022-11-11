@@ -242,10 +242,11 @@ scroll-behavior: smooth;
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1368px) {
   #input{
     font-size: 28px;
     left: 83vw;
+    top: 5vh;
     width: 100%;
   }
   .check{
