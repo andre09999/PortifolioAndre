@@ -1,5 +1,5 @@
-
 function Header() {
+ 
   return (
       <header>
         <h1 className='titulo-header'>{"<AL/>"}</h1>
@@ -8,6 +8,7 @@ function Header() {
         <a href='#sobre'>Sobre</a>
         <a href='#portifolio'>Portifolio</a>
        </nav>
+       
       </header>
   );
 }

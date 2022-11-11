@@ -1,6 +1,7 @@
 *{
   color: white;
 }
+
 header {
   background-color: rgb(48, 47, 47);
   display: flex;
@@ -42,7 +43,7 @@ footer {
   background-color: rgba(240, 248, 255, 0.349);
 
 }
-.historia{
+#historia{
   width: 45%;
 }
 
@@ -59,6 +60,14 @@ footer {
   border: 1px blue solid;
   border-radius: 5px;
   padding: 10px;
+}
+
+.darck-color{
+  color: white;
+}
+
+.light-color{
+  color: black;
 }
 
 .github{
@@ -99,15 +108,64 @@ footer {
   color:rgb(54, 206, 206); ;
 }
 
-.App{
-  background-color: black;
+.darck{
+  background-color: #252525;
+  color: white;
 }
+
+.light{
+  background-color: #ADADAD;
+  color: rgb(0, 0, 0);
+}
+.nocheck{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 300px;
+  height: 90px;
+  background-color: #252525;
+  border-radius: 50px;
+  background-image: url('imgs/logo/darck.svg');
+  transition: 4s;
+  background-position: center;
+  background-size: auto;
+}
+.inputs{
+  display: none;
+}
+.check{
+  display: flex;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  justify-content: space-around;
+  width: 300px;
+  border-radius: 50px;
+  height: 90px;
+  transition: 4s;
+  background-image: url('imgs/logo/ligth.jpg');
+  background-position: center;
+  background-size: auto;
+}
+
+#input{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 32px;
+  position: fixed;
+  left: 83%;
+  top: 150px;
+  height: 35px;
+  width: 100%;
+}
+
 
 .foto_portifolio {
   width: 300px;
 }
 
-.paragrafo{
+#paragrafo{
   text-align: justify;
 width: 250px;
 }
@@ -170,6 +228,8 @@ scroll-behavior: smooth;
   }
 }
 
+
+
 @media screen and (max-width: 767px){
   header {
     background-color: rgb(48, 47, 47);
@@ -179,6 +239,49 @@ scroll-behavior: smooth;
      left: 0;
      width: 100vw;
   }
+  .modo{
+    display: none;
+  }
+  #input{
+    position: fixed;
+    left: 0%;
+    top: 70px;
+    height: 30px;
+    width: 100%;
+  }
+  .nocheck{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60px;
+    height: 50px;
+    background-color: #252525;
+    border-radius: 50px;
+    background-image: url('imgs/logo/darck.svg');
+    transition: 4s;
+    background-position: center;
+    background-size: auto;
+  }
+  .inputs{
+    display: none;
+  }
+  .check{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    justify-content: space-around;
+    width: 60px;
+    border-radius: 50px;
+    height: 50px;
+    transition: 4s;
+    background-image: url('imgs/logo/ligth.jpg');
+    background-position: center;
+    background-size: auto;
+  }
+  
   .nav-header{
     width: 50vw;
   }
@@ -209,6 +312,7 @@ scroll-behavior: smooth;
   }
   .container-geral{
     display: flex;
+    flex-direction: column;
     height: 100vh;
     align-items: center;
   }
@@ -232,11 +336,24 @@ scroll-behavior: smooth;
   .img-but{
     width: 15px;
   }
+  #portifolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .foto_portifolio{
     width: 50vw;
   }
   .projetos{
+    width: 100vw;
     display: flex;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     flex-wrap: wrap;
   }
   h2{
@@ -253,7 +370,7 @@ scroll-behavior: smooth;
   section > a{
     width: 50%;
   }
-  .paragrafo{
+  #paragrafo{
     width: 50vw;
   }
 }
