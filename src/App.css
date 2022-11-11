@@ -127,7 +127,7 @@ footer {
   align-items: center;
   justify-content: space-around;
   width: 300px;
-  height: 90px;
+  height: 60px;
   background-color: #252525;
   border-radius: 50px;
   transition: 4s;
@@ -147,7 +147,7 @@ footer {
   justify-content: space-around;
   width: 300px;
   border-radius: 50px;
-  height: 90px;
+  height: 60px;
   background-image: url('imgs/logo/ligth.jpg');
   transition: 4s;
   background-position: center;
@@ -162,8 +162,8 @@ footer {
   font-size: 32px;
   position: fixed;
   left: 80vw;
-  top: 5vh;
-  height: 35px;
+  top: 3vh;
+  height: 10px;
   width: 100%;
 }
 
@@ -173,8 +173,8 @@ footer {
 }
 
 #paragrafo{
-  text-align: justify;
-width: 250px;
+  text-align: center;
+  width: 250px;
 }
 
 .projetos{
