@@ -64,9 +64,11 @@ footer {
 
 .darck-color{
   color: white;
+  transition: 4s;
 }
 
 .light-color{
+  transition: 4s;
   color: black;
 }
 
@@ -109,11 +111,13 @@ footer {
 }
 
 .darck{
+  transition: 4s;
   background-color: #252525;
   color: white;
 }
 
 .light{
+  transition: 4s;
   background-color: #ADADAD;
   color: rgb(0, 0, 0);
 }
@@ -260,8 +264,6 @@ scroll-behavior: smooth;
     background-color: #25252500;
     background-image: url('imgs/logo/moon-phase-icon-png-removebg-preview.png');
     transition: 4s;
-    background-position: center;
-    background-size: auto;
   }
   .inputs{
     display: none;
@@ -277,8 +279,6 @@ scroll-behavior: smooth;
     height: 60px;
     transition: 4s;
     background-image: url('imgs/logo/sun-ligth-removebg-preview.png');
-    background-position: center;
-    background-size: auto;
   }
   
   .nav-header{
