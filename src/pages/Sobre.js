@@ -5,9 +5,9 @@ function Sobre({color}) {
          <section>
     <img src={Avatar} className="img-Avatar pessoal" alt='avatar' />
     </section>
-    <section className="texto-sec">
-       <h1 className={color}>SOBRE MIM</h1>
-       <h3 className={color}>Goiânia, Goiás</h3>
+    <section className="texto-sec text">
+       <h1 id='historia' className={color}>SOBRE MIM</h1>
+       <h3 id='historia' className={color}>Goiânia, Goiás</h3>
        <p id='historia' className={color}>Me chamo Andre,<br/>  Tenho 27 anos sou formado em gestão de recursos humanos e técnico em informatica tenho paixão pelaa area de tecnologia.
 <br/>
 Fiz curso de desenvolvimento web fullstack na trybe durante 1 ano para aperfeiçoar meus conhecimentos na area.
