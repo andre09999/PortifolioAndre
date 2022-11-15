@@ -347,6 +347,7 @@ scroll-behavior: smooth;
     translate: all .5s;
   }
   .lista1{
+    display: block;
     text-align: center;
     background-color: rgba(48, 47, 47, 0.644);
     position: fixed;
