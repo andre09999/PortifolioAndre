@@ -3,7 +3,7 @@ function Sobre({color}) {
   return (
     <main  id='sobre' className='container-geral'>
          <section>
-    <img src={Avatar} className="img-Avatar pessoal" alt='avatar' />
+    <img src={Avatar} className="pessoal" alt='avatar' />
     </section>
     <section className="texto-sec text">
        <h1 id='historia' className={color}>SOBRE MIM</h1>

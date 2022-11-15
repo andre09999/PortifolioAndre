@@ -31,15 +31,18 @@ animation-iteration-count: infinite;
 .lista{
   display: flex;
   gap: 15px;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+}
+.lista1{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
   align-items: center;
 }
 
-.lista li{
+.linksli{
   display: flex;
-  gap: 15px;
-  justify-content: space-around;
-  align-items: center;
 }
 
 a{
@@ -267,6 +270,11 @@ scroll-behavior: smooth;
 .titulo{
   display: none;
 }
+.pessoal{
+  margin-left: 15px;
+  width: 30vw;
+  border-radius: 15px;
+}
 
 @keyframes titulo-header {
   100%{
@@ -313,18 +321,18 @@ scroll-behavior: smooth;
     display: flex;
     border: 2px blue solid;
     border-radius: 10px;
-    padding: 15px;
+    padding: 10px;
   }
   .github{
     align-items: center;
     display: flex;
     border: 2px rgb(109, 11, 109) solid;
     border-radius: 10px;
-    padding: 15px;
+    padding: 10px;
   }
   .titulo{
     display: block;
-    font-size: 30px;
+    font-size: 18px;
     position: fixed;
     text-align: center;
   }
@@ -351,7 +359,7 @@ scroll-behavior: smooth;
   .fas{
     top: 30px;
     position: fixed;
-    width: 50px;
+    width: 40px;
   }
   .nav-header ,.lista, .linksli {
     display: block;
@@ -389,7 +397,7 @@ scroll-behavior: smooth;
   #input{
     display: block;
     margin-left: 65vw;
-    top: 25px !important; 
+    top: 30px !important; 
     position: fixed;
     height: 30px;
   }
@@ -398,8 +406,8 @@ scroll-behavior: smooth;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 60px;
-    height: 60px;
+    width: 40px !important;
+    height: 40px !important;
     border-radius: 50px;
     background-color: #25252500;
     background-image: url('imgs/logo/moon-phase-icon-png-removebg-preview.png');
@@ -414,24 +422,24 @@ scroll-behavior: smooth;
     align-items: center;
     font-weight: bolder;
     justify-content: space-around;
-    width: 60px;
+    width: 40px !important;
     border-radius: 50px;
-    height: 60px;
+    height: 40px !important;
     transition: 4s;
     background-image: url('imgs/logo/sun-ligth-removebg-preview.png');
   }
   #titulo-home{
-    font-size: 20px;
+    font-size: 18px;
   }
   #historia{
-    font-size: 20px;
+    font-size: 16px;
   }
   
   .nav-header{
     width: 50vw;
   }
   .titulo-header{
-    font-size: 26px;
+    font-size: 22px;
   }
   .container-gerall{
     display: flex;
@@ -453,7 +461,7 @@ scroll-behavior: smooth;
   .texto-sec{
     text-align: center;
     height: 75vh;
-    width: 50%;
+    width: 90%;
   }
 
   .text{
@@ -471,10 +479,11 @@ scroll-behavior: smooth;
     font-size: 10px;
   }
   .img-Avatar{
-    margin-right: 10px;
+    margin-left: 15px;
     width: 30vw;
   }
   .pessoal{
+    border-radius: 15px;
     width: 50vw;
   }
   h1{
@@ -531,7 +540,7 @@ scroll-behavior: smooth;
     width: 50%;
   }
   #paragrafo{
-    font-size: 20px;
+    font-size: 16px;
     width: 50vw;
   }
 }
