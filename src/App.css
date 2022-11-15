@@ -104,6 +104,8 @@ footer {
   background-color: rgba(240, 248, 255, 0);
 }
 .img-Avatar{
+  border-radius: 10px;
+  margin-left: 3vw;
   width: 350px;
 }
 .nome {
@@ -258,6 +260,9 @@ scroll-behavior: smooth;
     height: 50px;
   }
 
+  .img-Avatar{
+    width: 300px;
+  }
 }
 
 
@@ -336,6 +341,7 @@ scroll-behavior: smooth;
     margin-bottom: 0;
   }
   .texto-sec{
+    text-align: center;
     height: 75vh;
     width: 100%;
   }
@@ -349,6 +355,9 @@ scroll-behavior: smooth;
     font-size: 10px;
   }
   .img-Avatar{
+    width: 30vw;
+  }
+  .pessoal{
     width: 50vw;
   }
   h1{

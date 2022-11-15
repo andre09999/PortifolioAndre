@@ -1,9 +1,9 @@
-import Avatar from '../imgs/fotoPessoal/IMG_20210611_134037_195.jpg'
+import Avatar from '../imgs/fotoPessoal/315191556_5496258120490689_3663881283572641793_n.jpeg'
 function Sobre({color}) {
   return (
     <main  id='sobre' className='container-geral'>
          <section>
-    <img src={Avatar} className="img-Avatar" alt='avatar' />
+    <img src={Avatar} className="img-Avatar pessoal" alt='avatar' />
     </section>
     <section className="texto-sec">
        <h1 className={color}>SOBRE MIM</h1>
