@@ -6,6 +6,7 @@ import foto4 from '../imgs/Projetos/Trivia.jpg'
 import foto5 from '../imgs/Projetos/trynfu.jpg'
 import foto6 from '../imgs/Projetos/tune.jpg'
 import foto7 from '../imgs/Projetos/wallet.jpg'
+import foto8 from '../imgs/Projetos/Blackjack.jpg'
 function Portifolio({color}) {
   return (
     <main id='portifolio' className='projetos-cont'>
@@ -70,6 +71,14 @@ function Portifolio({color}) {
 
         <h2  id='titulo-home' className={color}>Projeto Wallet</h2>
         <p id='paragrafo' className={color}>Este projeto foi simulando uma carteira digital para monitorar os gastos fazendo soma conversão de valores</p>
+        <span className='tecnologia'>Tecnologia utilizada:<br/>
+        Html, Css, Js, React</span><br/>
+        </a>
+        
+        <a target='_blank' href='https://blackjackreact.netlify.app/' rel="noreferrer"><img src={foto8} className="foto_portifolio" alt='avatar' />
+
+        <h2  id='titulo-home' className={color}>Projeto Blackjack</h2>
+        <p id='paragrafo' className={color}>Este projeto foi Consumindo a API da klever e com um jogo Blackjack conhecido no Brasil com 21</p>
         <span className='tecnologia'>Tecnologia utilizada:<br/>
         Html, Css, Js, React</span><br/>
         </a>
