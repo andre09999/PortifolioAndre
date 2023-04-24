@@ -13,6 +13,14 @@ function Portifolio({color}) {
     <main id='portifolio' className='projetos-cont'>
         <h1  id='titulo-Projetos' className={color}>Projetos</h1>
         <section className='projetos'>
+        <a target='_blank' href='https://front-end-production-a1da.up.railway.app/login' rel="noreferrer"><img src={foto9} className="foto_portifolio" alt='avatar' />
+
+        <h2  id='titulo-home' className={color}>Gastro Bar</h2>
+        <p id='paragrafo' className={color}>Este projeto foi feito uma Api completa fullstack com validações de dados </p>
+        <span className='tecnologia'>Tecnologia utilizada:<br/>
+          Html, Css, Js, React, Node, Mysql, sequelize</span><br/>
+        </a>
+
         <a target='_blank' href='https://andre09999.github.io/App-De-Receitas/' rel="noreferrer"><img src={foto} className="foto_portifolio" alt='avatar' />
 
         <h2  id='titulo-home' className={color}>Projeto App de receita</h2>
@@ -83,15 +91,6 @@ function Portifolio({color}) {
         <span className='tecnologia'>Tecnologia utilizada:<br/>
         Html, Css, Js, React</span><br/>
         </a>
-
-        <a target='_blank' href='https://front-end-production-a1da.up.railway.app/login' rel="noreferrer"><img src={foto9} className="foto_portifolio" alt='avatar' />
-
-        <h2  id='titulo-home' className={color}>Gastro Bar</h2>
-        <p id='paragrafo' className={color}>Este projeto foi feito uma Api completa fullstack com validações de dados </p>
-        <span className='tecnologia'>Tecnologia utilizada:<br/>
-          Html, Css, Js, React, Node, Mysql, sequelize</span><br/>
-        </a>
-
         </section>
     </main>
   );
