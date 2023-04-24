@@ -7,6 +7,7 @@ import foto5 from '../imgs/Projetos/trynfu.jpg'
 import foto6 from '../imgs/Projetos/tune.jpg'
 import foto7 from '../imgs/Projetos/wallet.jpg'
 import foto8 from '../imgs/Projetos/Blackjack.jpg'
+import foto9 from '../imgs/Projetos/gastroBar.jpg'
 function Portifolio({color}) {
   return (
     <main id='portifolio' className='projetos-cont'>
@@ -82,6 +83,15 @@ function Portifolio({color}) {
         <span className='tecnologia'>Tecnologia utilizada:<br/>
         Html, Css, Js, React</span><br/>
         </a>
+
+        <a target='_blank' href='https://front-end-production-a1da.up.railway.app/login' rel="noreferrer"><img src={foto9} className="foto_portifolio" alt='avatar' />
+
+        <h2  id='titulo-home' className={color}>Gastro Bar</h2>
+        <p id='paragrafo' className={color}>Este projeto foi feito uma Api completa fullstack com validações de dados </p>
+        <span className='tecnologia'>Tecnologia utilizada:<br/>
+          Html, Css, Js, React, Node, Mysql, sequelize</span><br/>
+        </a>
+
         </section>
     </main>
   );
