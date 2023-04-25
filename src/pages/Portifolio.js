@@ -8,18 +8,26 @@ import foto6 from '../imgs/Projetos/tune.jpg'
 import foto7 from '../imgs/Projetos/wallet.jpg'
 import foto8 from '../imgs/Projetos/Blackjack.jpg'
 import foto9 from '../imgs/Projetos/gastroBar.jpg'
+import foto10 from '../imgs/Projetos/PostagemSiteOliveerBarber.jpg'
 function Portifolio({color}) {
   return (
     <main id='portifolio' className='projetos-cont'>
         <h1  id='titulo-Projetos' className={color}>Projetos</h1>
         <section className='projetos'>
         <a target='_blank' href='https://front-end-production-a1da.up.railway.app/login' rel="noreferrer"><img src={foto9} className="foto_portifolio" alt='avatar' />
-
         <h2  id='titulo-home' className={color}>Gastro Bar</h2>
         <p id='paragrafo' className={color}>Este projeto foi feito uma Api completa fullstack com validações de dados </p>
         <span className='tecnologia'>Tecnologia utilizada:<br/>
           Html, Css, Js, React, Node, Mysql, sequelize</span><br/>
         </a>
+
+        <a target='_blank' href='https://oliveerbarber.netlify.app/' rel="noreferrer"><img src={foto10} className="foto_portifolio" alt='avatar' />
+
+<h2  id='titulo-home' className={color}>Projeto Oliveer Barber</h2>
+<p id='paragrafo' className={color}>Este trabalho Foi realizado toda parte de Front-end de maneira  responsiva </p>
+<span className='tecnologia'>Tecnologia utilizada:<br/>
+Html, Css, Js, React</span><br/>
+</a>
 
         <a target='_blank' href='https://andre09999.github.io/App-De-Receitas/' rel="noreferrer"><img src={foto} className="foto_portifolio" alt='avatar' />
 
