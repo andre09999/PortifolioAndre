@@ -1,0 +1,79 @@
+[
+  {
+    "nome": "Ecoomerce",
+    "imagem": "ecoomerce.jpg",
+    "link": "https://ecoomer-game-potencia-tech.netlify.app/",
+    "descricao": "Este projeto foi feito uma simulação de ecoomerce de jogos utilizando React e redux",
+    "tecnologias": "Html, Css, Js, React"
+  },
+  {
+    "nome": "Site Volto",
+    "imagem": "volvo.jpg",
+    "link": "https://god-frontend-code-test-lake.vercel.app/",
+    "descricao": "Este projeto foi feito uma simulação de um site volto utilizando React e redux",
+    "tecnologias": "Html, Css, Js, React"
+  },
+  {
+    "nome": "Projeto App de Receitas",
+    "imagem": "App de receita.jpg",
+    "link": "https://andre09999.github.io/App-De-Receitas/",
+    "descricao": "Este projeto foi consumido 2 api de receitas uma de bebidas e outra de comida com parte para fazer login favoritar e finalizar receitas",
+    "tecnologias": "Html, Css, Js, React"
+  },
+  {
+    "nome": "Projeto Tunes",
+    "imagem": "tune.jpg",
+    "link": "https://andre09999.github.io/Tunes/",
+    "descricao": "Este projeto foi feito consumindo api gratuita do itunes",
+    "tecnologias": "Html, Css, Js, React"
+  },
+  {
+    "nome": "Projeto Wallet",
+    "imagem": "wallet.jpg",
+    "link": "https://andre09999.github.io/Wallet/",
+    "descricao": "Este projeto foi simulando uma carteira digital para monitorar os gastos fazendo soma conversão de valores",
+    "tecnologias": "Html, Css, Js, React"
+  },
+  {
+    "nome": "Projeto História do Android",
+    "imagem": "Historia Do Android.jpg",
+    "link": "https://andre09999.github.io/projeto-android/",
+    "descricao": "Este projeto foi feito no curso do Gustavo guanabara no youtube",
+    "tecnologias": "Html, Css"
+  },
+  {
+    "nome": "Projeto Online Store",
+    "imagem": "Online Store.jpg",
+    "link": "https://andre09999.github.io/Store/",
+    "descricao": "Este projeto foi consumido api do mercado livre simulando um site para compras online",
+    "tecnologias": "Html, Css, Js, React"
+  },
+  {
+    "nome": "Projeto Starwars",
+    "imagem": "Starwars.jpg",
+    "link": "https://andre09999.github.io/starwars-planets-search/",
+    "descricao": "Este projeto foi consumido api do starwars falando sobre os planetas do filme e com filtros para localizar melhor o que procura",
+    "tecnologias": "Html, Css, Js, React"
+  },
+  {
+    "nome": "Projeto Trivia",
+    "imagem": "Trivia.jpg",
+    "link": "https://andre09999.github.io/Trivia/",
+    "descricao": "Este projeto foi consumido api do de jogo trivia",
+    "tecnologias": "Html, Css, Js, React"
+  },
+  {
+    "nome": "Projeto Tryunfu",
+    "imagem": "trynfu.jpg",
+    "link": "https://andre09999.github.io/TrybeWarts/",
+    "descricao": "Este projeto foi feito com base em jogo de tryunfu porem este e para cração de cartas",
+    "tecnologias": "Html, Css, Js, React"
+  },
+  {
+    "nome": "Projeto Blackjack",
+    "imagem": "Blackjack.jpg",
+    "link": "https://blackjackreact.netlify.app/",
+    "descricao": "Este projeto foi Consumindo a API da klever e com um jogo Blackjack conhecido no Brasil com 21",
+    "tecnologias": "Html, Css, Js, React"
+  }
+]
