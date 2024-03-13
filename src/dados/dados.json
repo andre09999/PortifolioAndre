@@ -1,5 +1,12 @@
 [
   {
+    "nome": "Gerenciamento de produtos",
+    "imagem": "gerenciamento.jpg",
+    "link": "https://front-end-products.vercel.app/",
+    "descricao": "Este projeto foi feito uma simulação de gerenciamento de produtos sendo uma aplicação FullStack",
+    "tecnologias": "Html, Css, Js, React, Postgress, node, express, sequelize, deploy"
+  },
+  {
     "nome": "Ecoomerce",
     "imagem": "ecoomerce.jpg",
     "link": "https://ecoomer-game-potencia-tech.netlify.app/",
