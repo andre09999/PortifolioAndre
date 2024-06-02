@@ -1,4 +1,4 @@
-import {useState} from "react";
+import { useState } from "react";
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -6,42 +6,40 @@ import Home from './pages/Home';
 import Sobre from './pages/Sobre';
 import Portifolio from './pages/Portifolio';
 
+const handleThemeChange = (e, setTheme, setThemeLetter, setChecked, setThemeMode) => {
+  if (e.checked) {
+    setTheme('dark');
+    setThemeLetter('dark-color');
+    setChecked('check');
+    setThemeMode('Light Mode');
+  } else {
+    setTheme('light');
+    setThemeLetter('light-color');
+    setChecked('nocheck');
+    setThemeMode('Dark Mode');
+  }
+};
 
 function App() {
-  const [theme,SetTheme]= useState('light')
-  const [thememode,SetThememode]= useState('Dark Mode')
-  const [themeletter,SetThemeletter]= useState('light-color')
-  const [checkd,Setcheckd]= useState('nocheck')
-  const temas = (e) => {
-    console.log(e.checked)
-    if(e.checked){
-      SetTheme('darck')
-      SetThemeletter('darck-color')
-      Setcheckd('check')
-      SetThememode('Ligth Mode')
-    }
-    else{
-      SetTheme('light')
-      SetThemeletter('light-color')
-      Setcheckd('nocheck')
-      SetThememode('Dark Mode')
-    }
-  }
+  const [theme, setTheme] = useState('light');
+  const [themeMode, setThemeMode] = useState('Dark Mode');
+  const [themeLetter, setThemeLetter] = useState('light-color');
+  const [checked, setChecked] = useState('nocheck');
+
   return (
     <div className={theme}>
-      <Header/>
-      <label id='input' className={themeletter}>
-      <div className={checkd}>
-      <p  className='modo'>{thememode}</p>
-       <input type='checkbox' className="inputs" onClick={(e)=>{temas(e.target)}}/>
-       </div>
-       </label>
-       <Home color={themeletter} />
-       <Sobre color={themeletter}/>
-       <Portifolio color={themeletter}/>
-      <Footer/>
+      <Header />
+      <label id='input' className={themeLetter}>
+        <div className={checked}>
+          <p className='modo'>{themeMode}</p>
+          <input type='checkbox' className="inputs" onClick={(e) => handleThemeChange(e.target, setTheme, setThemeLetter, setChecked, setThemeMode)} />
+        </div>
+      </label>
+      <Home color={themeLetter} />
+      <Sobre color={themeLetter} />
+      <Portifolio color={themeLetter} />
+      <Footer />
     </div>
   );
 }
-
 export default App;
