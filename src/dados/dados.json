@@ -1,86 +1,114 @@
 [
   {
-    "nome": "Gerenciamento de produtos",
-    "imagem": "gerenciamento.jpg",
-    "link": "https://front-end-products.vercel.app/",
-    "descricao": "Este projeto foi feito uma simulação de gerenciamento de produtos sendo uma aplicação FullStack",
-    "tecnologias": "Html, Css, Js, React, Postgress, node, express, sequelize, deploy"
+    "id": "produtos-fullstack",
+    "nome": "Gerenciamento de Produtos",
+    "imagem": "00gerenciamento.jpg",
+    "tipo": "Full Stack",
+    "descricaoCurta": "Aplicação Full Stack para cadastro e gestão de produtos.",
+    "descricao": "Simulação de um sistema de gerenciamento de produtos com front-end, API e persistência em banco de dados, estruturado para evoluir com métricas e relatórios.",
+    "tecnologias": ["HTML", "CSS", "JavaScript", "React", "Node.js", "Express", "Sequelize", "PostgreSQL", "Deploy"],
+    "features": ["CRUD de produtos", "API REST", "Persistência em banco", "Estrutura para dashboard/relatórios"],
+    "demo": "https://front-end-products.vercel.app/",
+    "repo": "",
+    "destaque": true,
+    "ano": 2024
   },
   {
-    "nome": "Ecoomerce",
-    "imagem": "ecoomerce.jpg",
-    "link": "https://ecoomer-game-potencia-tech.netlify.app/",
-    "descricao": "Este projeto foi feito uma simulação de ecoomerce de jogos utilizando React e redux",
-    "tecnologias": "Html, Css, Js, React"
+    "id": "ecommerce-jogos",
+    "nome": "E-commerce de Jogos",
+    "imagem": "0ecoomerce.jpg",
+    "tipo": "Front-end",
+    "descricaoCurta": "E-commerce de jogos com listagem e carrinho.",
+    "descricao": "Simulação de e-commerce com foco em experiência do usuário, navegação e organização de estado para fluxo de compra.",
+    "tecnologias": ["HTML", "CSS", "JavaScript", "React", "Redux"],
+    "features": ["Listagem de produtos", "Carrinho de compras", "Gerenciamento de estado", "UI responsiva"],
+    "demo": "https://ecoomer-game-potencia-tech.netlify.app/",
+    "repo": "",
+    "destaque": true,
+    "ano": 2024
   },
   {
-    "nome": "Site Volto",
-    "imagem": "volvo.jpg",
-    "link": "https://god-frontend-code-test-lake.vercel.app/",
-    "descricao": "Este projeto foi feito uma simulação de um site volto utilizando React e redux",
-    "tecnologias": "Html, Css, Js, React"
+    "id": "site-volvo",
+    "nome": "Landing Page Volvo",
+    "imagem": "1volvo.jpg",
+    "tipo": "Front-end",
+    "descricaoCurta": "Landing page responsiva com foco em layout e componentes.",
+    "descricao": "Simulação de uma landing page, reforçando componentização, layout responsivo e boas práticas de UI.",
+    "tecnologias": ["HTML", "CSS", "JavaScript", "React"],
+    "features": ["Componentização", "Layout responsivo", "Seções reutilizáveis", "Boas práticas de UI"],
+    "demo": "https://god-frontend-code-test-lake.vercel.app/",
+    "repo": "",
+    "destaque": false,
+    "ano": 2024
   },
   {
-    "nome": "Projeto App de Receitas",
-    "imagem": "App de receita.jpg",
-    "link": "https://andre09999.github.io/App-De-Receitas/",
-    "descricao": "Este projeto foi consumido 2 api de receitas uma de bebidas e outra de comida com parte para fazer login favoritar e finalizar receitas",
-    "tecnologias": "Html, Css, Js, React"
+    "id": "app-receitas",
+    "nome": "App de Receitas",
+    "imagem": "3App de receita.jpg",
+    "tipo": "Front-end",
+    "descricaoCurta": "Aplicação consumindo APIs de comidas e bebidas.",
+    "descricao": "Aplicação React consumindo duas APIs (comidas e bebidas) com fluxo de login, favoritos e finalização de receitas.",
+    "tecnologias": ["HTML", "CSS", "JavaScript", "React"],
+    "features": ["Consumo de APIs", "Login", "Favoritos", "Finalização de receitas"],
+    "demo": "https://andre09999.github.io/App-De-Receitas/",
+    "repo": "",
+    "destaque": true,
+    "ano": 2023
   },
   {
-    "nome": "Projeto Tunes",
-    "imagem": "tune.jpg",
-    "link": "https://andre09999.github.io/Tunes/",
-    "descricao": "Este projeto foi feito consumindo api gratuita do itunes",
-    "tecnologias": "Html, Css, Js, React"
+    "id": "wallet-carteira",
+    "nome": "Wallet (Controle de Gastos)",
+    "imagem": "5wallet.jpg",
+    "tipo": "Front-end",
+    "descricaoCurta": "Carteira digital para monitorar gastos e conversões.",
+    "descricao": "Simulação de carteira digital para monitoramento de despesas, com soma e conversão de valores, reforçando lógica e manipulação de estado.",
+    "tecnologias": ["HTML", "CSS", "JavaScript", "React"],
+    "features": ["Controle de gastos", "Conversão de valores", "Cálculos e totalizações", "Organização de estado"],
+    "demo": "https://andre09999.github.io/Wallet/",
+    "repo": "",
+    "destaque": false,
+    "ano": 2023
   },
   {
-    "nome": "Projeto Wallet",
-    "imagem": "wallet.jpg",
-    "link": "https://andre09999.github.io/Wallet/",
-    "descricao": "Este projeto foi simulando uma carteira digital para monitorar os gastos fazendo soma conversão de valores",
-    "tecnologias": "Html, Css, Js, React"
+    "id": "historia-android",
+    "nome": "História do Android",
+    "imagem": "6Historia Do Android.jpg",
+    "tipo": "Front-end",
+    "descricaoCurta": "Página estática com foco em HTML/CSS.",
+    "descricao": "Projeto desenvolvido com foco em estruturação de conteúdo e estilização, baseado em estudos de HTML e CSS.",
+    "tecnologias": ["HTML", "CSS"],
+    "features": ["Semântica HTML", "Estilização CSS", "Layout responsivo (se aplicável)"],
+    "demo": "https://andre09999.github.io/projeto-android/",
+    "repo": "",
+    "destaque": false,
+    "ano": 2022
   },
   {
-    "nome": "Projeto História do Android",
-    "imagem": "Historia Do Android.jpg",
-    "link": "https://andre09999.github.io/projeto-android/",
-    "descricao": "Este projeto foi feito no curso do Gustavo guanabara no youtube",
-    "tecnologias": "Html, Css"
+    "id": "trivia-game",
+    "nome": "Trivia Game",
+    "imagem": "8Trivia.jpg",
+    "tipo": "Front-end",
+    "descricaoCurta": "Jogo de perguntas com consumo de API.",
+    "descricao": "Projeto de jogo de trivia consumindo API, com fluxo de perguntas, pontuação e navegação.",
+    "tecnologias": ["HTML", "CSS", "JavaScript", "React"],
+    "features": ["Consumo de API", "Pontuação", "Fluxo de jogo", "Navegação"],
+    "demo": "https://andre09999.github.io/Trivia/",
+    "repo": "",
+    "destaque": false,
+    "ano": 2023
   },
   {
-    "nome": "Projeto Online Store",
-    "imagem": "Online Store.jpg",
-    "link": "https://andre09999.github.io/Store/",
-    "descricao": "Este projeto foi consumido api do mercado livre simulando um site para compras online",
-    "tecnologias": "Html, Css, Js, React"
-  },
-  {
-    "nome": "Projeto Starwars",
-    "imagem": "Starwars.jpg",
-    "link": "https://andre09999.github.io/starwars-planets-search/",
-    "descricao": "Este projeto foi consumido api do starwars falando sobre os planetas do filme e com filtros para localizar melhor o que procura",
-    "tecnologias": "Html, Css, Js, React"
-  },
-  {
-    "nome": "Projeto Trivia",
-    "imagem": "Trivia.jpg",
-    "link": "https://andre09999.github.io/Trivia/",
-    "descricao": "Este projeto foi consumido api do de jogo trivia",
-    "tecnologias": "Html, Css, Js, React"
-  },
-  {
-    "nome": "Projeto Tryunfu",
-    "imagem": "trynfu.jpg",
-    "link": "https://andre09999.github.io/TrybeWarts/",
-    "descricao": "Este projeto foi feito com base em jogo de tryunfu porem este e para cração de cartas",
-    "tecnologias": "Html, Css, Js, React"
-  },
-  {
-    "nome": "Projeto Blackjack",
+    "id": "blackjack-21",
+    "nome": "Blackjack (21)",
     "imagem": "Blackjack.jpg",
-    "link": "https://blackjackreact.netlify.app/",
-    "descricao": "Este projeto foi Consumindo a API da klever e com um jogo Blackjack conhecido no Brasil com 21",
-    "tecnologias": "Html, Css, Js, React"
+    "tipo": "Front-end",
+    "descricaoCurta": "Jogo Blackjack consumindo API da Klever.",
+    "descricao": "Jogo de Blackjack (21) consumindo API da Klever, com foco em lógica do jogo e interação do usuário.",
+    "tecnologias": ["HTML", "CSS", "JavaScript", "React"],
+    "features": ["Consumo de API", "Lógica do jogo", "UI interativa", "Regras do 21"],
+    "demo": "https://blackjackreact.netlify.app/",
+    "repo": "",
+    "destaque": false,
+    "ano": 2023
   }
 ]

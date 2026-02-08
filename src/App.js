@@ -1,45 +1,33 @@
-import { useState } from "react";
-import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import Sobre from './pages/Sobre';
-import Portifolio from './pages/Portifolio';
-
-const handleThemeChange = (e, setTheme, setThemeLetter, setChecked, setThemeMode) => {
-  if (e.checked) {
-    setTheme('dark');
-    setThemeLetter('dark-color');
-    setChecked('check');
-    setThemeMode('Light Mode');
-  } else {
-    setTheme('light');
-    setThemeLetter('light-color');
-    setChecked('nocheck');
-    setThemeMode('Dark Mode');
-  }
-};
+import { useMemo, useState } from "react";
+import "./App.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Sobre from "./pages/Sobre";
+import Portifolio from "./pages/Portifolio";
 
 function App() {
-  const [theme, setTheme] = useState('light');
-  const [themeMode, setThemeMode] = useState('Dark Mode');
-  const [themeLetter, setThemeLetter] = useState('light-color');
-  const [checked, setChecked] = useState('nocheck');
+  const [isDark, setIsDark] = useState(false);
+
+  const ui = useMemo(() => {
+    const theme = isDark ? "dark" : "light";
+    const themeLetter = isDark ? "dark-color" : "light-color";
+    const toggleClass = isDark ? "check" : "nocheck";
+    const themeModeLabel = isDark ? "Light Mode" : "Dark Mode";
+
+    return { theme, themeLetter, toggleClass, themeModeLabel };
+  }, [isDark]);
 
   return (
-    <div className={theme}>
-      <Header />
-      <label id='input' className={themeLetter}>
-        <div className={checked}>
-          <p className='modo'>{themeMode}</p>
-          <input type='checkbox' className="inputs" onClick={(e) => handleThemeChange(e.target, setTheme, setThemeLetter, setChecked, setThemeMode)} />
-        </div>
-      </label>
-      <Home color={themeLetter} />
-      <Sobre color={themeLetter} />
-      <Portifolio color={themeLetter} />
+    <div className={ui.theme}>
+     <Header  themeLetter={ui.themeLetter}  toggleClass={ui.toggleClass}  themeModeLabel={ui.themeModeLabel}  isDark={isDark}  onToggle={(v) => setIsDark(v)}/>
+      <Home color={ui.themeLetter} />
+      <Sobre color={ui.themeLetter} />
+      <Portifolio color={ui.themeLetter} />
+
       <Footer />
     </div>
   );
 }
+
 export default App;

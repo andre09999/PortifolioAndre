@@ -1,132 +1,230 @@
-:root {
-  --header-bg: rgb(48, 47, 47);
-  --highlight: rgb(54, 206, 206);
-  --background-dark: #252525;
-  --background-light: #ADADAD;
-  --color-dark: white;
-  --color-light: black;
-}
+/* Header.css - compatível com .light/.dark do App.css */
 
-body.dark-mode {
-  background-color: var(--background-dark);
-  color: var(--color-dark);
-}
-
-body.light-mode {
-  background-color: var(--background-light);
-  color: var(--color-light);
-}
-
-header {
-  background-color: var(--header-bg);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 10px 20px;
+  z-index: 9998;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 12px 20px;
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.light .header {
+  background: rgba(255, 255, 255, 0.55);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+.dark .header {
+  background: rgba(20, 20, 20, 0.45);
+}
+
+/* marca */
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
 }
 
 .titulo-header {
-  color: var(--highlight);
-  animation-duration: 2s;
-  animation-name: titulo-header;
-  animation-iteration-count: infinite;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  font-size: 22px;
 }
 
+/* usa o highlight certo por tema */
+.light .titulo-header {
+  color: var(--highlight-light, #0077ff);
+}
+
+.dark .titulo-header {
+  color: var(--highlight-dark, #36cece);
+}
+
+.titulo {
+  font-weight: 700;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* nav */
 .nav-header {
   display: flex;
-  gap: 15px;
-  justify-content: space-around;
   align-items: center;
+  gap: 12px;
 }
 
-.lista, .lista1 {
+.lista {
   display: flex;
-  gap: 15px;
-  justify-content: center;
+  gap: 16px;
   align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.lista1 {
-  display: block;
-  text-align: center;
-  background-color: rgba(48, 47, 47, 0.644);
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  margin-top: 50px;
-  left: 0;
-  transition: all .5s;
+.linksA {
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: background-color var(--t-fast), transform var(--t-fast), opacity var(--t-fast);
 }
 
-.linksli {
-  display: flex;
+.linksA:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-1px);
 }
 
-a {
-  text-decoration: none;
+.light .linksA:hover {
+  background: rgba(0, 0, 0, 0.08);
 }
 
+/* botão do menu (mobile) */
 .checkbtn {
-  font-size: 30px;
-  color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
+  display: none;
   cursor: pointer;
-  width: 30px;
+}
+
+#check1 {
   display: none;
 }
 
-.dark-mode-toggle {
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  color: var(--highlight);
-  font-size: 24px;
+.fas {
+  width: 28px;
+  height: 28px;
+}
+
+/* menu mobile aberto */
+.lista1 {
+  position: fixed;
+  top: 56px; /* altura aproximada do header */
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 56px);
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  margin: 0;
+  padding: 20px;
+  list-style: none;
+
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.light .lista1 {
+  background: rgba(255, 255, 255, 0.92);
+}
+
+/* links no mobile */
+.lista1 .linksA {
+  width: 100%;
+  text-align: center;
+  padding: 14px 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.light .lista1 .linksA {
+  background: rgba(0, 0, 0, 0.06);
 }
 
 @media screen and (max-width: 767px) {
   .checkbtn {
-    margin: 0;
     display: block;
-  }
-  .titulo {
-    display: block;
-    font-size: 18px;
-    position: fixed;
-    text-align: center;
   }
 
+  /* some com a lista normal no mobile fechado */
   .lista {
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    height: 30vh;
-    top: 50px;
-    left: -100%;
-    transition: all .5s;
+    display: none;
   }
+}
 
-  .fas {
-    top: 30px;
-    position: fixed;
-    width: 40px;
+.theme-toggle {
+  display: flex;
+  align-items: center;
+}
+
+/* botão clicável */
+.theme-switch {
+  border: 0;
+  padding: 0;
+  background: none;
+}
+
+/* reaproveita suas classes, mas garante que funcionem em <button> */
+.theme-switch.nocheck,
+.theme-switch.check {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 160px;
+  height: 40px;
+  border-radius: 999px;
+
+  cursor: pointer;
+  transition: transform var(--t-fast), opacity var(--t-fast);
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.theme-switch:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+/* IMAGENS DE FUNDO */
+.theme-switch.nocheck {
+  background-color: var(--background-dark);
+  background-image: url("../imgs/logo/dark.jpg");
+}
+
+.theme-switch.check {
+  background-image: url("../imgs/logo/light.jpg");
+}
+
+/* texto do modo */
+.theme-switch .modo {
+  font-size: 12px;
+  font-weight: 700;
+}
+.dark .theme-switch .modo  {
+  color: #0c0c0c;
+}
+.light .theme-switch .modo  {
+  color: #ffffff;
+}
+
+
+.li
+
+/* seu input continua escondido */
+.theme-switch .inputs {
+  display: none;
+}
+
+/* Mobile: compacta (igual você já fazia) */
+@media screen and (max-width: 767px) {
+  .theme-switch.nocheck,
+  .theme-switch.check {
+    width: 44px;
+    height: 44px;
+    background-image: none; /* se quiser manter a imagem no mobile, apaga essa linha */
   }
-
-  #check1:checked ~ .lista {
-    left: 0;
-  }
-
-  header {
-    background-color: var(--header-bg);
-    justify-content: space-around;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
+  .theme-switch .modo {
+    display: none;
   }
 }
