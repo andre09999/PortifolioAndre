@@ -1,5 +1,3 @@
-/* Header.css - compatível com .light/.dark do App.css */
-
 .header {
   position: fixed;
   top: 0;
@@ -11,52 +9,44 @@
   align-items: center;
   justify-content: space-between;
 
-  padding: 12px 20px;
+  padding: 10px 16px;
 
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(255,255,255,0.12);
 }
 
 .light .header {
-  background: rgba(255, 255, 255, 0.55);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+  background: rgba(255,255,255,0.6);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 .dark .header {
-  background: rgba(20, 20, 20, 0.45);
+  background: rgba(20,20,20,0.5);
 }
 
-/* marca */
+/* BRAND */
 .brand {
   display: flex;
-  align-items: baseline;
-  gap: 12px;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
 }
 
 .titulo-header {
   font-weight: 900;
-  letter-spacing: 0.5px;
-  font-size: 22px;
+  font-size: 20px;
 }
 
-/* usa o highlight certo por tema */
-.light .titulo-header {
-  color: var(--highlight-light, #0077ff);
-}
-
-.dark .titulo-header {
-  color: var(--highlight-dark, #36cece);
-}
+.light .titulo-header { color: var(--highlight-light); }
+.dark .titulo-header { color: var(--highlight-dark); }
 
 .titulo {
-  font-weight: 700;
   font-size: 14px;
-  opacity: 0.85;
+  font-weight: 700;
+  opacity: .8;
 }
 
-/* nav */
+/* NAV */
 .nav-header {
   display: flex;
   align-items: center;
@@ -65,128 +55,98 @@
 
 .lista {
   display: flex;
-  gap: 16px;
-  align-items: center;
+  gap: 14px;
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 .linksA {
-  padding: 8px 12px;
+  padding: 3px 10px;
+  margin:0;
   border-radius: 10px;
   font-weight: 600;
-  transition: background-color var(--t-fast), transform var(--t-fast), opacity var(--t-fast);
+  transition: .2s;
 }
 
 .linksA:hover {
-  background: rgba(255, 255, 255, 0.18);
-  transform: translateY(-1px);
+  background: rgba(255,255,255,0.18);
 }
 
 .light .linksA:hover {
-  background: rgba(0, 0, 0, 0.08);
+  background: rgba(0,0,0,0.08);
 }
 
-/* botão do menu (mobile) */
+/* MENU MOBILE BOTÃO */
 .checkbtn {
   display: none;
+  border: 0;
+  background: transparent;
   cursor: pointer;
 }
 
-#check1 {
-  display: none;
-}
-
 .fas {
-  width: 28px;
-  height: 28px;
+  width: 26px;
 }
 
-/* menu mobile aberto */
+/* MENU MOBILE */
 .lista1 {
   position: fixed;
-  top: 56px; /* altura aproximada do header */
+  top: 15px;
   left: 0;
   width: 100%;
-  height: calc(100vh - 56px);
+  height: calc(50vh);
 
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 5px;
 
-  margin: 0;
-  padding: 20px;
+  padding: 10px;
   list-style: none;
 
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0,0,0,0.78);
 }
 
 .light .lista1 {
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255,255,255,0.94);
 }
 
-/* links no mobile */
-.lista1 .linksA {
+.lista1 li {
   width: 100%;
+  height:50px;
   text-align: center;
-  padding: 14px 12px;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.08);
+  padding: 5px;
+  border-radius: 5px;
 }
 
-.light .lista1 .linksA {
-  background: rgba(0, 0, 0, 0.06);
-}
-
-@media screen and (max-width: 767px) {
-  .checkbtn {
-    display: block;
-  }
-
-  /* some com a lista normal no mobile fechado */
-  .lista {
-    display: none;
-  }
-}
-
+/* TOGGLE */
 .theme-toggle {
   display: flex;
   align-items: center;
 }
 
-/* botão clicável */
 .theme-switch {
   border: 0;
-  padding: 0;
   background: none;
+  padding: 0;
 }
 
-/* reaproveita suas classes, mas garante que funcionem em <button> */
-.theme-switch.nocheck,
-.theme-switch.check {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-
-  width: 160px;
-  height: 40px;
+.theme-switch.check,
+.theme-switch.nocheck {
+  width: 150px;
+  height: 38px;
   border-radius: 999px;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   cursor: pointer;
-  transition: transform var(--t-fast), opacity var(--t-fast);
 
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
-.theme-switch:hover {
-  transform: translateY(-1px);
-  opacity: 0.95;
-}
-
-/* IMAGENS DE FUNDO */
 .theme-switch.nocheck {
   background-color: var(--background-dark);
   background-image: url("../imgs/logo/dark.jpg");
@@ -196,35 +156,113 @@
   background-image: url("../imgs/logo/light.jpg");
 }
 
-/* texto do modo */
-.theme-switch .modo {
-  font-size: 12px;
-  font-weight: 700;
-}
-.dark .theme-switch .modo  {
-  color: #0c0c0c;
-}
-.light .theme-switch .modo  {
-  color: #ffffff;
-}
-
-
-.li
-
-/* seu input continua escondido */
 .theme-switch .inputs {
   display: none;
 }
 
-/* Mobile: compacta (igual você já fazia) */
-@media screen and (max-width: 767px) {
-  .theme-switch.nocheck,
-  .theme-switch.check {
+.modo {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+
+  .titulo { display: none; }
+
+  .lista { display: none; }
+
+  .checkbtn { display: block; }
+
+  .theme-switch.check,
+  .theme-switch.nocheck {
     width: 44px;
     height: 44px;
-    background-image: none; /* se quiser manter a imagem no mobile, apaga essa linha */
+    background-image: none;
   }
-  .theme-switch .modo {
-    display: none;
+
+  .modo { display: none; }
+}
+
+/* 1) Botão do menu: mantenha escondido no desktop e mostre no mobile/tablet */
+.checkbtn {
+  display: none;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 6px;
+}
+
+/* Se você quer o menu aparecer também em telas maiores (desktop), descomente:
+.checkbtn { display: block; }
+.lista { display: none; }
+*/
+
+/* 2) Toggle: sempre visível (fallback visual mesmo se a imagem falhar) */
+.theme-switch.check,
+.theme-switch.nocheck {
+  width: 150px;
+  height: 38px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  /* ✅ fallback pra nunca sumir */
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255,255,255,0.18);
+}
+
+.light .theme-switch.check,
+.light .theme-switch.nocheck {
+  background-color: rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0,0,0,0.12);
+}
+
+/* 3) Imagens do toggle (desktop) */
+.theme-switch.nocheck {
+  background-image: url("../imgs/logo/dark.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.theme-switch.check {
+  background-image: url("../imgs/logo/light.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* 4) BREAKPOINT: mostre o menu em telas até 1024px (mais realista que 767) */
+@media (max-width: 1024px) {
+  .checkbtn { display: block; }
+  .fas{right:50%; top:25px}
+  .lista { display: none; }
+  .check .modo{color: black;}
+  .nocheck .modo{color: white;}
+}
+
+/* 5) MOBILE: toggle compacto mas VISÍVEL (sem imagem, com cor) */
+@media (max-width: 767px) {
+  .theme-switch.check,
+  .theme-switch.nocheck {
+    width: 44px;
+    height: 44px;
+    /* ✅ mantém visível no mobile */
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(255,255,255,0.22);
   }
+
+  .light .theme-switch.check,
+  .light .theme-switch.nocheck {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgba(0,0,0,0.14);
+    
+  }
+  .modo { display: none; }
+}
+
+/* garante que o input nunca apareça */
+.theme-switch .inputs {
+  display: none !important;
 }

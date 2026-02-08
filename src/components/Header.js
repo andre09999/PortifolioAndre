@@ -1,57 +1,48 @@
 import React, { useState } from "react";
-import menuBar from "../imgs/nav/menu-bar.png";
+import menuBar from "../imgs/nav/open-menu.png";
 import "./Header.css";
 
 function Header({ themeLetter, toggleClass, themeModeLabel, isDark, onToggle }) {
-  const [nav, setNav] = useState("lista");
-
-  const navBar = (isOpen) => setNav(isOpen ? "lista1" : "lista");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="header">
-      {/* Logo */}
+
+      {/* BRAND */}
       <div className="brand">
         <span className="titulo-header">{"<AL/>"}</span>
         <span className="titulo">Portfólio</span>
       </div>
 
-      {/* Menu */}
-      <nav className="nav-header" aria-label="Navegação principal">
-        <ul className={nav}>
-          <li className="linksli"><a href="#home" className="linksA">Home</a></li>
-          <li className="linksli"><a href="#sobre" className="linksA">Sobre</a></li>
-          <li className="linksli"><a href="#portifolio" className="linksA">Portfólio</a></li>
-          <li className="linksli"><a href="#contato" className="linksA">Contato</a></li>
+      {/* NAV */}
+      <nav className="nav-header">
+
+        <ul className={isMenuOpen ? "lista1" : "lista"}>
+          <li><a href="#home" className="linksA" onClick={() => setIsMenuOpen(false)}>Home</a></li>
+          <li><a href="#sobre" className="linksA" onClick={() => setIsMenuOpen(false)}>Sobre</a></li>
+          <li><a href="#portifolio" className="linksA" onClick={() => setIsMenuOpen(false)}>Portfólio</a></li>
+          <li><a href="#contato" className="linksA" onClick={() => setIsMenuOpen(false)}>Contato</a></li>
         </ul>
 
-        {/* Botão Mobile */}
-        <label className="checkbtn" aria-label="Abrir menu">
-          <input type="checkbox" onChange={({ target }) => navBar(target.checked)} />
-          <img src={menuBar} className="fas" alt="menu" />
-        </label>
+        {/* BOTÃO MENU MOBILE */}
+        <button  className="checkbtn"  onClick={() => setIsMenuOpen(v => !v)}  aria-label="Abrir menu">
+        <img src={menuBar} className="fas" alt="menu" />
+</button>
+
       </nav>
 
-      {/* Toggle tema (agora clicável) */}
+      {/* TOGGLE TEMA */}
       <div className={`theme-toggle ${themeLetter}`}>
         <button
-          type="button"
           className={`theme-switch ${toggleClass}`}
           onClick={() => onToggle(!isDark)}
           aria-label="Alternar tema"
-          aria-pressed={isDark}
         >
           <span className="modo">{themeModeLabel}</span>
-
-          {/* input escondido só para manter semântica (opcional) */}
-          <input
-            type="checkbox"
-            className="inputs"
-            checked={isDark}
-            readOnly
-            tabIndex={-1}
-          />
+          <input type="checkbox" className="inputs" checked={isDark} readOnly />
         </button>
       </div>
+
     </header>
   );
 }
