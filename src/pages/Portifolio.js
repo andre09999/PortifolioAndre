@@ -42,7 +42,7 @@ function Portifolio({ color }) {
               {/* Features rápidas */}
               {Array.isArray(p.features) && p.features.length > 0 && (
                 <ul className={`features ${color}`}>
-                  {p.features.slice(0, 3).map((f) => (
+                  {p.features.slice(0, 15).map((f) => (
                     <li key={f}>{f}</li>
                   ))}
                 </ul>

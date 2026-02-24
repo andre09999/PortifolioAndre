@@ -110,5 +110,37 @@
     "repo": "",
     "destaque": false,
     "ano": 2023
-  }
+  },
+  {
+  "id": "business-insights-platform",
+  "nome": "Business Insights Platform",
+  "imagem": "businessInsights.jpg",
+  "tipo": "Full Stack",
+  "descricaoCurta": "Plataforma Full Stack para análise de dados e visualização de KPIs estratégicos.",
+  "descricao": "Plataforma de análise de dados desenvolvida com arquitetura Full Stack utilizando Python (FastAPI), SQL e React + TypeScript. O sistema permite consolidação de métricas, visualização de KPIs, ranking de vendedores e filtros dinâmicos, com backend e banco de dados deployados em ambiente cloud e containerização com Docker.",
+  "tecnologias": [
+    "Python",
+    "FastAPI",
+    "SQL",
+    "React",
+    "TypeScript",
+    "Docker",
+    "REST API"
+  ],
+  "features": [
+    "APIs REST escaláveis",
+    "Modelagem de banco de dados",
+    "Dashboard interativo",
+    "KPIs estratégicos",
+    "Ranking de vendedores",
+    "Filtros dinâmicos",
+    "Deploy em cloud",
+    "Containerização com Docker",
+    "Testes de endpoints"
+  ],
+  "demo": "https://business-insights-plataform.netlify.app/",
+  "repo": "https://github.com/andre09999/business-insights-plataform",
+  "destaque": true,
+  "ano": 2026
+}
 ]
