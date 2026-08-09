@@ -406,7 +406,7 @@ button:focus-visible {
   max-width: none;
   display: grid;
   grid-template-columns: 1.35fr 0.65fr;
-  align-items: end;
+  align-items: flex-end;
   gap: 64px;
 }
 
