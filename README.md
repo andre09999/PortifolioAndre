@@ -1,71 +1,66 @@
-# Getting Started with Create React App
+# Portfólio — André Luis
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Portfólio profissional desenvolvido para apresentar projetos autorais de desenvolvimento Full Stack, dados e Business Intelligence.
 
-## Available Scripts
+🔗 **Acesse:** [portifoiliowebandre.netlify.app](https://portifoiliowebandre.netlify.app/)
 
-In the project directory, you can run:
+## Visão geral
 
-### `npm start`
+A interface foi planejada para comunicar experiência e competências de forma clara, com hierarquia visual consistente e navegação simples. A seleção de projetos prioriza trabalhos autorais fora do contexto de formação.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Destaques
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- apresentação profissional objetiva;
+- projetos com demonstração e código-fonte;
+- tema claro e escuro com preferência persistida;
+- navegação responsiva para desktop e dispositivos móveis;
+- HTML semântico, foco visível e suporte a movimento reduzido;
+- metadados básicos de SEO e compartilhamento social.
 
-### `npm test`
+## Tecnologias
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React 18
+- JavaScript
+- CSS responsivo
+- Create React App
+- Netlify
 
-### `npm run build`
+## Executando localmente
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Pré-requisitos: Node.js 18 ou superior e npm.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/andre09999/PortifolioAndre.git
+cd PortifolioAndre
+npm install
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+A aplicação ficará disponível em `http://localhost:3000`.
 
-### `npm run eject`
+## Build de produção
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm run build
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Estrutura principal
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```text
+src/
+├── components/   # cabeçalho e contato/rodapé
+├── dados/        # conteúdo estruturado dos projetos
+├── pages/        # seções da página
+├── App.js        # composição e tema
+└── App.css       # sistema visual e responsividade
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contato
 
-## Learn More
+- [LinkedIn](https://www.linkedin.com/in/dev-andre-front-end/)
+- [GitHub](https://github.com/andre09999)
+- [E-mail](mailto:andre09999@live.com)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# PortifolioAndre" 
+Desenvolvido por André Luis Ribeiro de Souza.
