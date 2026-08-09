@@ -37,6 +37,7 @@ function Header({ theme, onToggleTheme }) {
         </a>
 
         <nav
+          id="menu-principal"
           className={isMenuOpen ? "main-nav is-open" : "main-nav"}
           aria-label="Navegação principal"
         >
