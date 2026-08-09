@@ -46,7 +46,7 @@ function Sobre() {
 
       <div className="about-note">
         <p>
-          Baseado em <strong>Goiânia, Goiás</strong>, aberto a oportunidades
+          <strong>Goiânia, Goiás</strong>, aberto a oportunidades
           remotas e projetos em que produto, tecnologia e dados trabalhem juntos.
         </p>
         <a href="#contato">Vamos conversar <span aria-hidden="true">→</span></a>
