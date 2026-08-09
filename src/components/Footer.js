@@ -42,7 +42,7 @@ function Footer() {
               key={contact.label}
               href={contact.href}
               target={contact.href.startsWith("http") ? "_blank" : undefined}
-              rel={contact.href.startsWith("http") ? "noreferrer" : undefined}
+              rel="noreferrer"
             >
               <span>{contact.label}</span>
               <strong>{contact.value}</strong>
