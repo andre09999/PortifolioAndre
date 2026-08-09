@@ -1,61 +1,80 @@
-import Avatar from '../imgs/avatar/myAvatar.svg';
-
-function Home({ color }) {
+function Home() {
   return (
-    <main id="home" className="container-gerall">
-      {/* Coluna do texto */}
-      <section className="texto-sec">
-        <h1 id="titulo-home" className={color}>
-          Olá, eu sou <br />
-          <span className="nome">André Luis</span>
-          <br />
-          Desenvolvedor Full Stack{" "}
-          <span style={{ fontWeight: 300 }}>| Dados, BI e IA aplicada</span>
-        </h1>
-
-        <p id="paragrafo" className={color}>
-          Construo sistemas web, APIs e dashboards que transformam dados em decisões.
+    <main id="home" className="hero section-shell">
+      <section className="hero-copy" aria-labelledby="hero-title">
+        <p className="eyebrow">
+          <span className="status-dot" aria-hidden="true" />
+          Disponível para novos projetos
         </p>
 
-        <div className="containerbut">
-          <a href="#portifolio" className="but linkedin">
-            <h2 className={color}>Ver Projetos</h2>
-          </a>
+        <h1 id="hero-title">
+          Transformo ideias e dados em
+          <span> produtos digitais que geram valor.</span>
+        </h1>
 
+        <p className="hero-description">
+          Sou André Luis, desenvolvedor Full Stack em Goiânia. Construo
+          interfaces acessíveis, APIs confiáveis e dashboards que tornam
+          decisões complexas mais simples.
+        </p>
+
+        <div className="hero-actions">
+          <a className="button button-primary" href="#portfolio">
+            Explorar projetos
+            <span aria-hidden="true">↗</span>
+          </a>
           <a
-            href="https://www.linkedin.com/in/devf-andre/"
+            className="button button-secondary"
+            href="https://www.linkedin.com/in/dev-andre-front-end/"
             target="_blank"
             rel="noreferrer"
-            className="but linkedin"
           >
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-              className="img-but"
-              alt="LinkedIn"
-            />
-            <h2 className={color}>LinkedIn</h2>
-          </a>
-
-          <a
-            href="https://github.com/andre09999"
-            target="_blank"
-            rel="noreferrer"
-            className="but github"
-          >
-            <img
-              className="img-but"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-              alt="GitHub"
-            />
-            <h2 className={color}>GitHub</h2>
+            Ver LinkedIn
           </a>
         </div>
+
+        <ul className="technology-list" aria-label="Principais tecnologias">
+          <li>React</li>
+          <li>TypeScript</li>
+          <li>Node.js</li>
+          <li>Python</li>
+          <li>PostgreSQL</li>
+        </ul>
       </section>
 
-      {/* Coluna da imagem */}
-      <section className="home-media">
-        <img src={Avatar} className="img-Avatar" alt="Avatar do André" />
-      </section>
+      <aside className="hero-panel" aria-label="Resumo profissional">
+        <div className="code-window" aria-hidden="true">
+          <div className="window-bar">
+            <span />
+            <span />
+            <span />
+          </div>
+          <pre>
+            <code>
+              <span className="code-purple">const</span> profissional = {"{"}
+              {"\n"}  foco: <span className="code-green">"produto"</span>,
+              {"\n"}  base: <span className="code-green">"dados"</span>,
+              {"\n"}  padrão: <span className="code-green">"qualidade"</span>
+              {"\n"}{"}"};
+            </code>
+          </pre>
+        </div>
+
+        <div className="hero-metrics">
+          <div>
+            <strong>Full Stack</strong>
+            <span>Do conceito ao deploy</span>
+          </div>
+          <div>
+            <strong>UI/UX</strong>
+            <span>Clareza em cada interação</span>
+          </div>
+          <div>
+            <strong>Dados</strong>
+            <span>Informação que orienta decisões</span>
+          </div>
+        </div>
+      </aside>
     </main>
   );
 }
